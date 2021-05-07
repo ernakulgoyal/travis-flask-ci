@@ -1,0 +1,16 @@
+.idea/*
+.vscode
+app/dev.log
+migrations
+quotereport
+__pycache__
+*.log
+.env
+Pipfile
+Pipfile.lock
+app/main/environment_variables.py
+*.html
+venv/*
+app/logs/*
+.coverage
+code_coverage/
