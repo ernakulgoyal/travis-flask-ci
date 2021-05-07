@@ -1,5 +1,5 @@
 sudo: required
-language: generic
+language: python
 
 services:
   - docker
@@ -8,7 +8,7 @@ before_install:
   - docker build -t ernakulgoyal/travis-flask-ci -f Dockerfile .
 
 script:
-  - docker run -e CI=true ernakulgoyal/travis-flask-ci pytest
+  - python -m pytest -v
 
 #deploy:
 #  provider: elasticbeanstalk
