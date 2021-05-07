@@ -1,0 +1,8 @@
+"""
+__license__     = "B2B-PAF"
+__version__     = "0.1"
+__author__      = "Nakul Goyal"
+__email__       = "nakul.goyal@thepsi.com"
+__copyright__   = "Copyright @2020"
+__status__      = "Production/Development"
+"""
