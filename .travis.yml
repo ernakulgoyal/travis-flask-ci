@@ -18,6 +18,6 @@ deploy:
   bucket_name: 'elasticbeanstalk-ap-southeast-2-893686199282'
   bucket_path: 'travis-flask-ci'
   on:
-    branch: master
+    branch: main
   access_key_id: $AWS_ACCESSKEY
   secret_access_key: $AWS_SECRETKEY
