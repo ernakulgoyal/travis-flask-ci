@@ -10,14 +10,14 @@ before_install:
 script:
   - python -m pytest -v
 
-#deploy:
-#  provider: elasticbeanstalk
-#  region: 'us-east-1'
-#  app: 'docker'
-#  env: 'docker-env'
-#  bucket_name: 'elasticbeanstalk-us-east-1-923445559289'
-#  bucket_path: 'docker'
-#  on:
-#    branch: master
-#  access_key_id: $AWS_ACCESS_KEY
-#  secret_access_key: $AWS_SECRET_KEY
+deploy:
+  provider: elasticbeanstalk
+  region: 'ap-southeast-2'
+  app: 'travis-flask-ci'
+  env: 'Travisflaskci-env'
+  bucket_name: 'elasticbeanstalk-ap-southeast-2-893686199282'
+  bucket_path: 'travis-flask-ci'
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESSKEY
+  secret_access_key: $AWS_SECRETKEY
